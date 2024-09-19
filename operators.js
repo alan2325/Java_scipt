@@ -33,6 +33,6 @@ let b='5'
 
 
 // logical
-    alert(a==b && a>b )
-    alert(a==b || a>b )
+    // alert(a==b && a>b )
+    // alert(a==b || a>b )
     alert(! a==b)
