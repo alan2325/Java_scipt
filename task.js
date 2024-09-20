@@ -41,25 +41,25 @@ function unit(){
 }
 
 function city(){
-    c=parseInt(document.getElementById("units").value)
+    c=document.getElementById("city").value
 
-    if (city=="Delhi")
+    if (c=="delhi")
         {
-            document.getElementById("h1").innerHTML="redfort"
+            document.getElementById("h1").innerHTML="Redfort"
         }
    
-    else if(city=="agra") 
+    else if(c=="agra") 
         {
             document.getElementById("h1").innerHTML="Taj Mahal"
         }
             
-    else if(city=="jaipur")
+    else if(c=="jaipur")
         {
             document.getElementById("h1").innerHTML="Jal Mahal"
         }
             
     else {
-        document.getElementById("h1").innerHTML="Jal Mahal"
+        document.getElementById("h1").innerHTML="Invalid input"
     }
            
 }
