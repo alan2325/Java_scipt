@@ -1,12 +1,11 @@
 function fact(){
-    i=parseInt(document.getElementById("fno").value)
+    a=parseInt(document.getElementById("fno").value)
     fat=1
+    i=1
     do{
-        fat*=i
-        i+=1
-
-        document.write(i);
-  
+        fat=fat*i
+        document.getElementById("h1").innerHTML=fat
+        i++
     }
     while (i<=a)
 }
