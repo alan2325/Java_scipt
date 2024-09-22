@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ body {
     height: 60%;
     padding: 50px;
     border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px #b719191a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ input[type="text"], input[type="tel"], input[type="email"] {
     flex: 4;
     margin-right: 5%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ab4949;
     border-radius: 5px;
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
     transition: border 0.3s ease;
@@ -68,7 +68,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 button {
     width: 30%;
     padding: 12px;
-    background-color: #007BFF;
+    background-color: #00ff62;
     color: #fff;
     border: none;
     border-radius: 5px;
