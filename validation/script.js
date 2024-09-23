@@ -20,7 +20,7 @@ function valid(){
         document.getElementById("pin_error").innerHTML="invalid pin"
     }
     else{
-        if(! pin.match('[67-69].{5}')){
+        if(! pin.match('[6][7-9].{4}')){
             document.getElementById("pin_error").innerHTML="invalid pin"
         }
     }
