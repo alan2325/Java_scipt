@@ -19,9 +19,13 @@ function valid(){
     if(pin.length!=6){
         document.getElementById("pin_error").innerHTML="invalid pin"
     }
+    else{
+        if(! pin.match('[67-69].{5}')){
+            document.getElementById("pin_error").innerHTML="invalid pin"
+        }
+    }
     if(! email.match("@gmail.com$")){
         document.getElementById("email_error").innerHTML="invalid email"
-        // alert('invalid email')
     }
 
 }
