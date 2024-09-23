@@ -21,6 +21,7 @@ function valid(){
     }
     if(! email.match("@gmail.com$")){
         document.getElementById("email_error").innerHTML="invalid email"
+        // alert('invalid email')
     }
 
 }
