@@ -1,12 +1,26 @@
 l=[1,2,3,4,5,6]
+
+//display list l in console
 console.log(l);
+
+// display datatype of l
 console.log(typeof l);
+
+// display element in 3rd position
 console.log(l[3]);
+
+// display length of l
 console.log(l.length);
+
+// convert list l to string a
 a=l.toString()
 console.log(typeof a);
+
+// delete last element in l
 l.pop()
 console.log(l);
+
+// add element to last position of list
 l.push(10)
 console.log(l)
 
