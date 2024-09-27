@@ -24,20 +24,26 @@
 
 // calback
 
-console.log('start');
-function display(callback){
-    console.log('welcome');
-    setTimeout(function(){
-        console.log('inside fun');
-        callback()
+// console.log('start');
+// function display(callback){
+//     console.log('welcome');
+//     setTimeout(function(){
+//         console.log('inside fun');
+//         callback()
 
-    },3000)
+//     },3000)
+// }
+
+// function display1(){
+//     console.log('dis');
+// }
+
+// console.log('before');
+// display(display1)
+// console.log('end');
+
+
+function display(){
+    console.log('display');
 }
-
-function display1(){
-    console.log('dis');
-}
-
-console.log('before');
-display(display1)
-console.log('end');
+const a=setInterval(display,2000)
