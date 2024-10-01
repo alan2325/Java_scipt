@@ -31,6 +31,7 @@
                 <th>Email</th>
                 <th>Cource</th>
                 <th>Date</th>
+                <th>Action</th>
                 
             </tr>
         </thead>
@@ -39,7 +40,7 @@
         </tbody>
     </table><br>
 
-    <div class="container" id="submit_form">
+    <form id="submit_form">
         <label for="id">Id</label>
         <input type="number" id="id" placeholder="Enter Id">
         <label for="name">NAME</label>
@@ -49,26 +50,26 @@
         <label for="email">Email</label>
         <input type="email" id="email" placeholder="Email">
         <label for="email">Cource</label>
-        <input type="text" id="Cource" placeholder="Enter prefered Cource">       
+        <input type="text" id="cource" placeholder="Enter prefered Cource">       
         <label for="date">Date</label>
         <input type="date" id="date">
         <input type="submit" value="submit">
-    </div> 
+    </form> 
     
-    <script src="./student.js"></script>
+   
 
     <div class="container" id="edit_form">
-        <label for="name">NAME</label>
-        <input type="text" id="name" placeholder="Enter new Name">
-        <label for="age">AGE</label>
-        <input type="number" id="age" placeholder="Enter new Age">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enetr new Email">
-        <label for="email">Cource</label>
-        <input type="text" id="Cource" placeholder="Enter new Cource">       
-        <label for="date">Date</label>
-        <input type="date" id="date" >
-        <input type="submit" value="submit">
+        <label for="e_name">NAME</label>
+        <input type="text" id="e_name" placeholder="Enter new Name">
+        <label for="e_age">AGE</label>
+        <input type="number" id="e_age" placeholder="Enter new Age">
+        <label for="e_email">Email</label>
+        <input type="email" id="e_email" placeholder="Enetr new Email">
+        <label for="e_course">Cource</label>
+        <input type="text" id="e_course" placeholder="Enter new Cource">       
+        <label for="e_date">Date</label>
+        <input type="date" id="e_date" >
+        <input type="submit" value="update">
     </div> 
     
     <script src="./student.js"></script>
