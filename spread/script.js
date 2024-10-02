@@ -43,18 +43,58 @@
 // console.log('end');
 
 
-function display(){
-    console.log('display');
+
+
+
+// function display(){ 
+//     let a='welcome'
+//     console.log(a);
+//     const main = document.querySelector('.main');
+//     const div = document.createElement('div');
+//     let count2=3// 3min
+//     let count = 60
+//     let c=setInterval(function(){ ;
+//     div.innerHTML = `<h2 style="color:green">${count2}:${count}</h2>`;
+//     count--
+//     count2--
+    
+//     if(count==0){
+//         clearInterval(c)
+//         console.log('completed');
+//         div.innerHTML = `<h2 style="color:green">completed</h2>`;
+
+//     }
+// },1000)
+//     main.appendChild(div)
+// }
+// display()
+
+
+
+
+// Count down
+function display() { 
+    console.log('welcome');
+    const main = document.querySelector('.main');
+    const div = document.createElement('div');
+    
+    let count2 = 3;
+    let count = 60; 
+    let c = setInterval(function() {
+        const minutes = String(count2).padStart(2, '0');
+        const seconds = String(count).padStart(2, '0');
+        div.innerHTML = `<h2 style="color:green">${minutes}:${seconds}</h2>`;
+        count--;
+        if (count < 0) {
+            count = 59; 
+            count2--;   
+        }
+        if (count2 < 0) {
+            clearInterval(c);
+            div.innerHTML = `<h2 style="color:green">completed</h2>`;
+            console.log('completed');
+        }
+    }, 1000);
+    main.appendChild(div);
 }
-const a=setInterval(display,2000)
-
-
-let count=10
-let c=setInterval(function(){
-    console.log(count);
-    count--
-    if(count==0){
-        clearInterval(c)
-        console.log('completed');
-    }
-},1000)
+display();
