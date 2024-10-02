@@ -39,18 +39,29 @@ function display()
         const edit_btn=document.createElement("button")
         edit_btn.textContent="Edit"
         edit_btn.onclick=function () {
-            submit_form(element.id)
+            edit_form(element.id)
         }
         edit_td.appendChild(edit_btn)
         t_row.appendChild(edit_td)
 
         t_var.appendChild(t_row)
-    });
-}
 
-    
-function submit_form(){
-    
+
+
+        // delete
+        const del_td=document.createElement("td")
+        const del_btn=document.createElement("button")
+        del_btn.textContent="Delete"
+        del_btn.onclick=function () {
+            Delete_data(element.id)
+        }
+        del_td.appendChild(del_btn)
+        t_row.appendChild(del_td)
+
+        t_var.appendChild(t_row)
+
+    });
+
 }
 
 
@@ -74,7 +85,7 @@ function submit_form(){
 
             display()
             // console.log('hello');
-        });
+        })
             
 
      
@@ -90,7 +101,7 @@ function submit_form(){
         document.getElementById("e_name").value=edit_details.name
         document.getElementById("e_age").value=edit_details.age
         document.getElementById("e_email").value=edit_details.email
-        document.getElementById("e_course").value=edit_details.course
+        document.getElementById("e_cource").value=edit_details.cource
         document.getElementById("e_date").value=edit_details.date
         edit_id=id
     }
@@ -99,16 +110,17 @@ function submit_form(){
  
 document.getElementById("edit_form").addEventListener("submit",function (event) {
     event.preventDefault()
-    // const e_id=document.getElementById("e_id").value
+    console.log('hello')
+    const e_id=document.getElementById("e_id").value
     const e_name=document.getElementById("e_name").value
     const e_age=document.getElementById("e_age").value
     const e_email=document.getElementById("e_email").value
-    const e_course=document.getElementById("e_course").value
+    const e_cource=document.getElementById("e_cource").value
     const e_date=document.getElementById("e_date").value
-    console.log('hello')
-    user=user.map(user=>{
-        if(user.name==edit_id){
-            return {...user,id:e_id,name:e_name,age:e_age,email:e_email,course:e_course,date:e_date}
+    
+    s=s.map(user=>{
+        if(user.id==edit_id){
+            return {...user,id:e_id,name:e_name,age:e_age,email:e_email,cource:e_cource,date:e_date}
         }
         return user
     })
@@ -118,6 +130,18 @@ document.getElementById("edit_form").addEventListener("submit",function (event) 
     display()
 
 })
+
+
+// Delete
+
+function Delete_data(id){
+    s=s.filter(user=>{
+        if(user.id!=id){
+            return user
+        }    
+    })
+    display()
+}
 
 
 display()

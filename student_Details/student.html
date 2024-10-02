@@ -40,7 +40,7 @@
         </tbody>
     </table><br>
 
-    <form id="submit_form">
+    <form class="container" id="submit_form"  style="margin-top: 50px; display: grid;">
         <label for="id">Id</label>
         <input type="number" id="id" placeholder="Enter Id">
         <label for="name">NAME</label>
@@ -58,19 +58,21 @@
     
    
 
-    <div class="container" id="edit_form">
+    <form class="container" id="edit_form" style="margin-top: 50px; display: none;">
+        <label for="e_id">ID</label>
+        <input type="number" id="e_id" >
         <label for="e_name">NAME</label>
-        <input type="text" id="e_name" placeholder="Enter new Name">
+        <input type="text" id="e_name" >
         <label for="e_age">AGE</label>
-        <input type="number" id="e_age" placeholder="Enter new Age">
+        <input type="number" id="e_age" >
         <label for="e_email">Email</label>
         <input type="email" id="e_email" placeholder="Enetr new Email">
-        <label for="e_course">Cource</label>
-        <input type="text" id="e_course" placeholder="Enter new Cource">       
+        <label for="e_cource">Cource</label>
+        <input type="text" id="e_cource" placeholder="Enter new Cource">       
         <label for="e_date">Date</label>
         <input type="date" id="e_date" >
         <input type="submit" value="update">
-    </div> 
+    </form> 
     
     <script src="./student.js"></script>
 
