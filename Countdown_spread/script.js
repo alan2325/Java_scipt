@@ -79,7 +79,7 @@ function display() {
     const div = document.createElement('div');
     
     let count2 = 3;
-    let count = 60; 
+    let count = 59; 
     let c = setInterval(function() {
         const minutes = String(count2).padStart(2, '0');
         const seconds = String(count).padStart(2, '0');
@@ -92,7 +92,7 @@ function display() {
         if (count2 < 0) {
             clearInterval(c);
             div.innerHTML = `<h2 style="color:green">completed</h2>`;
-            console.log('completed');
+            // console.log('completed');
         }
     }, 1000);
     main.appendChild(div);
